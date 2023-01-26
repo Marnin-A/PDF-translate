@@ -1,0 +1,11 @@
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.inputPDF {
+  display: flex;
+  flex-direction: row;
+}
