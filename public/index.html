@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" type="image/svg+xml" href="/NaijaAI-logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
     <title>PDF Translate</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="content">
       <div class="inputPDF">
-        <input type="file" id="inpFile" />
-        <button type="button" id="btnUpload">Upload</button>
+        <label for="inpFile">Choose file</label>
+        <input type="file" id="inpFile" hidden />
+        <button type="button" id="btnUpload">Upload PDF</button>
       </div>
       <br />
       <br />
