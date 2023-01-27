@@ -7,10 +7,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+.content {
+  display: flex;
+  flex-direction: column;
+}
 .inputPDF {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 40vw;
 }
 label {
   font-size: 1.3em;
@@ -18,4 +23,30 @@ label {
   border: 2px solid white;
   border-radius: 1em;
   padding: 2%;
+}
+#btnUpload {
+  background-color: white;
+  color: rgb(69, 105, 103);
+  border-radius: 1em;
+  padding: 2%;
+  font-size: 1.3em;
+  border: 2px solid white;
+}
+#reset {
+  color: rgb(225, 80, 80);
+  background-color: rgb(255, 255, 255);
+  border-radius: 1em;
+  padding: 2%;
+  font-size: 1.3em;
+  border: 2px solid rgb(245, 3, 3);
+  margin-top: 2%;
+  width: max-content;
+  align-self: flex-end;
+}
+#resultText {
+  border-radius: 1em;
+  padding: 3%;
+  width: 100%;
+  min-height: 30vh;
+  height: max-content;
 }
