@@ -18,11 +18,14 @@
   <body>
     <div class="content">
       <div class="inputPDF">
-        <label for="inpFile">Choose file</label>
+        <!-- Hidden File input button -->
         <input type="file" id="inpFile" hidden />
+        <!-- File select label -->
+        <label for="inpFile">Choose file</label>
         <button type="button" id="btnUpload">Upload PDF</button>
       </div>
-      <button id="reset" onclick="window.location.reload(true)">Reset</button>
+      <!-- Refresh page and clear selected files -->
+      <button id="reset" onclick="window.location.reload(true)">Clear</button>
       <br />
       <br />
       <textarea
@@ -30,27 +33,6 @@
         placeholder="Your PDF text will appear here..."
       ></textarea>
     </div>
-    <script>
-      const inpFile = document.getElementById("inpFile");
-      const btnUpload = document.getElementById("btnUpload");
-      const resultText = document.getElementById("resultText");
-
-      btnUpload.addEventListener("click", () => {
-        const formData = new FormData();
-
-        formData.append("pdfFile", inpFile.files[0]);
-
-        fetch("/extract-text", {
-          method: "post",
-          body: formData,
-        })
-          .then((response) => {
-            return response.text();
-          })
-          .then((extractedText) => {
-            resultText.value = extractedText.trim();
-          });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
