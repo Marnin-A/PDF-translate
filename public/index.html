@@ -18,10 +18,14 @@
   <body>
     <div class="content">
       <div class="inputPDF">
-        <!-- Hidden File input button -->
-        <input type="file" id="inpFile" hidden />
-        <!-- File select label -->
-        <label for="inpFile">Choose file</label>
+        <span id="chooseFile">
+          <!-- Hidden File input button -->
+          <input type="file" id="inpFile" hidden />
+          <!-- File select label -->
+          <label for="inpFile">Choose file</label>
+          <!-- name of file chosen -->
+          <span id="file-chosen">No file chosen</span>
+        </span>
         <button type="button" id="btnUpload">Upload PDF</button>
       </div>
       <!-- Refresh page and clear selected files -->

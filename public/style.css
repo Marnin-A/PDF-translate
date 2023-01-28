@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 40vw;
 }
 label {
@@ -23,6 +24,14 @@ label {
   border: 2px solid white;
   border-radius: 1em;
   padding: 2%;
+}
+.file-chosen {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+}
+#chooseFile {
+  width: 60%;
 }
 #btnUpload {
   background-color: white;
